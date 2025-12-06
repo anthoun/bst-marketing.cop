@@ -2,22 +2,31 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNMHVYRLG0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZNMHVYRLG0');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <title>Get more clients | BST Marketing Experts</title>
   <meta name="description"
     content="We help local businesses get more clients with paid ads and SEO. Guaranteed results in 30 days." />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            background: '#09090b',
-            surface: '#18181b',
-            primary: '#F24E1E', // Brand Orange
-            secondary: '#a1a1aa',
+            background: '#f8fafc', // Slate 50
+            surface: '#ffffff',    // White
+            primary: '#F24E1E',    // Brand Orange
+            secondary: '#64748b',  // Slate 500
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
 import { Blog } from './pages/Blog';
@@ -8,18 +8,20 @@ import { Newsletter } from './pages/Newsletter';
 import { Contact } from './pages/Contact';
 import { Admin } from './pages/Admin';
 
+import { ScrollToTop } from './components/ScrollToTop';
+
 // Wrapper to conditionally render layout (admin has its own layout structure)
 const AppContent: React.FC = () => {
   const location = useLocation();
   const isAdminRoute = location.pathname.startsWith('/admin');
 
   if (isAdminRoute) {
-     return (
-        <Routes>
-           <Route path="/admin" element={<Admin />} />
-           <Route path="/admin/*" element={<Admin />} />
-        </Routes>
-     );
+    return (
+      <Routes>
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin/*" element={<Admin />} />
+      </Routes>
+    );
   }
 
   return (
@@ -38,6 +40,7 @@ const AppContent: React.FC = () => {
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <AppContent />
     </Router>
   );

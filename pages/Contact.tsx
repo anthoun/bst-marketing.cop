@@ -45,54 +45,54 @@ export const Contact: React.FC = () => {
         {/* Left Content */}
         <div className="pt-4">
           <h4 className="text-red-500 font-bold tracking-[0.2em] uppercase text-sm mb-4">Discovery Call</h4>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-[1.1]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-[1.1]">
             Let's Map Out Your<br />
             <span className="text-primary">Dominance Strategy</span>
           </h1>
 
-          <p className="text-gray-400 text-lg mb-12 leading-relaxed max-w-lg">
+          <p className="text-gray-600 text-lg mb-12 leading-relaxed max-w-lg">
             This isn't a sales pitch disguised as a call. We'll look at your current setup, identify the bottlenecks, and show you exactly how we can add 20-30 new customers next month.
           </p>
 
           <div className="space-y-8">
             <div className="flex gap-4 items-start">
-              <div className="w-12 h-12 rounded-lg bg-surface border border-white/10 flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-lg bg-white border border-gray-200 flex items-center justify-center shrink-0">
                 <Icons.Clock className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-bold text-white text-lg">30 Minutes</h3>
-                <p className="text-gray-400 text-sm">Short, punchy, and valuable.</p>
+                <h3 className="font-bold text-gray-900 text-lg">30 Minutes</h3>
+                <p className="text-gray-600 text-sm">Short, punchy, and valuable.</p>
               </div>
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="w-12 h-12 rounded-lg bg-surface border border-white/10 flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-lg bg-white border border-gray-200 flex items-center justify-center shrink-0">
                 <Icons.Video className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-bold text-white text-lg">Zoom Meeting</h3>
-                <p className="text-gray-400 text-sm">Face to face strategy session.</p>
+                <h3 className="font-bold text-gray-900 text-lg">Zoom Meeting</h3>
+                <p className="text-gray-600 text-sm">Face to face strategy session.</p>
               </div>
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="w-12 h-12 rounded-lg bg-surface border border-white/10 flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-lg bg-white border border-gray-200 flex items-center justify-center shrink-0">
                 <Icons.Calendar className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-bold text-white text-lg">Actionable Plan</h3>
-                <p className="text-gray-400 text-sm">Walk away with a roadmap, whether you hire us or not.</p>
+                <h3 className="font-bold text-gray-900 text-lg">Actionable Plan</h3>
+                <p className="text-gray-600 text-sm">Walk away with a roadmap, whether you hire us or not.</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Right Form Card */}
-        <div className="bg-surface border border-white/10 rounded-2xl p-6 md:p-8 shadow-2xl relative overflow-hidden">
+        <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-2xl relative overflow-hidden">
           {/* Subtle glow */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 blur-3xl rounded-full pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
 
-          <h2 className="text-2xl font-bold text-white mb-6">Enter Your Details</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Enter Your Details</h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
@@ -101,7 +101,7 @@ export const Contact: React.FC = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full bg-black/50 border border-white/10 rounded-lg p-3 text-white focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
+                className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
                 required
               />
             </div>
@@ -113,7 +113,7 @@ export const Contact: React.FC = () => {
                 type="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full bg-black/50 border border-white/10 rounded-lg p-3 text-white focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
+                className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
                 required
               />
             </div>
@@ -125,7 +125,7 @@ export const Contact: React.FC = () => {
                 type="tel"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full bg-black/50 border border-white/10 rounded-lg p-3 text-white focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
+                className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
                 required
               />
             </div>
@@ -137,7 +137,7 @@ export const Contact: React.FC = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                className="w-full bg-black/50 border border-white/10 rounded-lg p-3 text-white focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
+                className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
               />
             </div>
 

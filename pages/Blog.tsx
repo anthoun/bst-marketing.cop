@@ -35,13 +35,13 @@ export const Blog: React.FC = () => {
       </Helmet>
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h4 className="text-red-500 font-bold uppercase tracking-widest mb-2 text-sm">The Blog</h4>
-        <h1 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight">The No BS Blog That Will Help You Get More Customers</h1>
+        <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">The No BS Blog That Will Help You Get More Customers</h1>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (
           <Link to={`/blog/${post.slug}`} key={post.id} className="group flex flex-col h-full">
-            <div className="aspect-[16/9] overflow-hidden rounded-xl mb-6 bg-surface border border-white/5">
+            <div className="aspect-[16/9] overflow-hidden rounded-xl mb-6 bg-white border border-gray-200">
               {post.coverImage && (
                 <img
                   src={post.coverImage}
@@ -55,18 +55,18 @@ export const Blog: React.FC = () => {
                 <span className="text-primary">{new Date(post.publishedAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                 {post.category && (
                   <>
-                    <span className="w-1 h-1 bg-gray-600 rounded-full" />
-                    <span className="text-gray-400">{post.category}</span>
+                    <span className="w-1 h-1 bg-gray-400 rounded-full" />
+                    <span className="text-gray-500">{post.category}</span>
                   </>
                 )}
               </div>
               <h2 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors leading-tight">
                 {post.title}
               </h2>
-              <p className="text-gray-400 mb-6 line-clamp-3 text-sm leading-relaxed flex-1">
+              <p className="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed flex-1">
                 {post.excerpt}
               </p>
-              <div className="flex items-center text-sm font-medium text-white group-hover:text-primary transition-colors mt-auto">
+              <div className="flex items-center text-sm font-medium text-gray-900 group-hover:text-primary transition-colors mt-auto">
                 Read Article <Icons.ChevronRight className="w-4 h-4 ml-1" />
               </div>
             </div>
@@ -74,8 +74,8 @@ export const Blog: React.FC = () => {
         ))}
       </div>
 
-      <div className="mt-20 text-center border-t border-white/10 pt-20">
-        <h3 className="text-2xl md:text-3xl font-bold text-white mb-8">Want these strategies implemented for you?</h3>
+      <div className="mt-20 text-center border-t border-gray-200 pt-20">
+        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Want these strategies implemented for you?</h3>
         <Link to="/contact" className="inline-block bg-primary hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg uppercase tracking-wider transition-colors">
           Book A Strategy Call
         </Link>

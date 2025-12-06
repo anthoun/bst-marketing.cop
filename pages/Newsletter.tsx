@@ -30,27 +30,27 @@ export const Newsletter: React.FC = () => {
 
         {/* Header Section */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-900/20 border border-red-500/20 mb-8">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-50 border border-red-200 mb-8">
             <Icons.Mail className="w-8 h-8 text-primary" strokeWidth={1.5} />
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] text-white">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] text-gray-900">
             The <span className="text-primary">Unfair Advantage</span><br />
             Newsletter
           </h1>
 
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Join local business owners receiving weekly direct response strategies that are working <span className="italic text-gray-300">right now</span>. No BS, just things that will get results straight away.
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Join local business owners receiving weekly direct response strategies that are working <span className="italic text-gray-900">right now</span>. No BS, just things that will get results straight away.
           </p>
         </div>
 
         {/* Subscription Form */}
         <div className="max-w-xl mx-auto mb-20">
-          <div className="bg-surface/50 border border-white/10 p-2 rounded-2xl md:rounded-full flex flex-col md:flex-row gap-2">
+          <div className="bg-white border border-gray-200 p-2 rounded-2xl md:rounded-full flex flex-col md:flex-row gap-2 shadow-lg">
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-1 bg-transparent border-none focus:ring-0 text-white placeholder-gray-600 px-6 py-4 outline-none"
+              className="flex-1 bg-transparent border-none focus:ring-0 text-gray-900 placeholder-gray-400 px-6 py-4 outline-none"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -90,9 +90,9 @@ export const Newsletter: React.FC = () => {
               desc: "What's changing in the algo and how to profit from it."
             }
           ].map((item, i) => (
-            <div key={i} className="bg-surface/30 border border-white/5 p-8 rounded-2xl hover:border-white/10 transition-colors">
-              <h3 className="font-bold text-lg text-white mb-3">{item.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+            <div key={i} className="bg-white border border-gray-200 p-8 rounded-2xl hover:border-primary/30 transition-colors shadow-sm">
+              <h3 className="font-bold text-lg text-gray-900 mb-3">{item.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>

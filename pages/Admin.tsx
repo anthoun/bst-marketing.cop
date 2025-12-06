@@ -299,11 +299,11 @@ export const Admin: React.FC = () => {
                            <div className="space-y-2">
                               <label className="text-xs font-bold text-gray-500 uppercase">Content</label>
                               <div className="bg-white text-black rounded-lg overflow-hidden">
-                                 <ReactQuill
-                                    theme="snow"
+                                 <textarea
+                                    className="w-full h-64 p-4 text-black"
                                     value={currentPost.content || ''}
-                                    onChange={(value) => setCurrentPost({ ...currentPost, content: value })}
-                                    className="h-64 mb-12"
+                                    onChange={(e) => setCurrentPost({ ...currentPost, content: e.target.value })}
+                                    placeholder="Write your post content here..."
                                  />
                               </div>
                            </div>
