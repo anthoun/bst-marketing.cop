@@ -78,10 +78,10 @@ export const Home: React.FC = () => {
             <div className="relative">
               {/* Decorative border/glow effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-2xl blur opacity-30"></div>
-              <div className="relative aspect-video rounded-2xl overflow-hidden border border-gray-200 shadow-2xl bg-white">
+              <div className="relative aspect-video rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_30px_rgba(242,78,30,0.3)] bg-white ring-4 ring-primary/10 animate-pulse-slow">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/KR_NykRkqnk?rel=0&showinfo=0&controls=1&autoplay=0"
+                  src="https://www.youtube.com/embed/L0__GE4Txxk?rel=0&showinfo=0&controls=1&autoplay=0"
                   title="Agency Showreel"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
