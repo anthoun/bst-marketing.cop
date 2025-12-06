@@ -78,26 +78,13 @@ export const Home: React.FC = () => {
             <div className="relative">
               {/* Decorative border/glow effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-2xl blur opacity-30"></div>
-              <div className="relative aspect-video rounded-2xl overflow-hidden border border-gray-200 shadow-2xl bg-white group">
-                {/* Overlay for lazy load effect simulation */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/50 group-hover:bg-black/40 transition-colors z-10 pointer-events-none">
-                  <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20">
-                    <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[18px] border-l-white border-b-[10px] border-b-transparent ml-1"></div>
-                  </div>
-                </div>
-                {/* Digital Network Abstract Image Background for Video Thumbnail */}
-                <img
-                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
-                  alt="Digital Network"
-                  className="absolute inset-0 w-full h-full object-cover opacity-60"
-                />
-
+              <div className="relative aspect-video rounded-2xl overflow-hidden border border-gray-200 shadow-2xl bg-white">
                 <iframe
-                  className="w-full h-full relative z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  src="https://www.youtube.com/embed/KR_NykRkqnk?autoplay=0&mute=1&controls=0&showinfo=0&rel=0"
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/KR_NykRkqnk?rel=0&showinfo=0&controls=1&autoplay=0"
                   title="Agency Showreel"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  loading="lazy"
+                  allowFullScreen
                 ></iframe>
               </div>
             </div>
