@@ -69,13 +69,24 @@ export const Home: React.FC = () => {
                 Stop waiting for customers to find you. We put your business in front of locals actively searching for your services - starting this month.
               </p>
 
+              {/* Mobile Video Position */}
+              <div className="block lg:hidden w-full mb-10 relative aspect-video rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_30px_rgba(242,78,30,0.3)] bg-white ring-4 ring-primary/10 animate-pulse-slow">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/L0__GE4Txxk?rel=0&showinfo=0&controls=1&autoplay=0"
+                  title="Agency Showreel"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
               <Link to="/contact" className="px-8 py-4 bg-primary text-white font-bold text-sm tracking-wider uppercase rounded hover:bg-orange-600 transition-all flex items-center justify-center gap-2">
                 Book a Call <Icons.ChevronRight className="w-4 h-4" />
               </Link>
             </div>
 
             {/* Right Content - Visual/Video */}
-            <div className="relative">
+            <div className="relative hidden lg:block">
               {/* Decorative border/glow effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-2xl blur opacity-30"></div>
               <div className="relative aspect-video rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_30px_rgba(242,78,30,0.3)] bg-white ring-4 ring-primary/10 animate-pulse-slow">
