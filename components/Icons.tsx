@@ -1,11 +1,11 @@
-import { 
-  Rocket, 
-  BarChart3, 
-  Globe2, 
-  Menu, 
-  X, 
-  ChevronRight, 
-  Mail, 
+import {
+  Rocket,
+  BarChart3,
+  Globe2,
+  Menu,
+  X,
+  ChevronRight,
+  Mail,
   Loader2,
   LayoutDashboard,
   FileText,
@@ -28,7 +28,10 @@ import {
   Clock,
   Video,
   Calendar,
-  Send
+  Send,
+  Instagram,
+  Linkedin,
+  Twitter
 } from 'lucide-react';
 
 export const Icons = {
@@ -61,5 +64,8 @@ export const Icons = {
   Clock,
   Video,
   Calendar,
-  Send
+  Send,
+  Instagram,
+  Linkedin,
+  Twitter
 };

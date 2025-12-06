@@ -122,6 +122,21 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <h3 className="text-sm font-bold uppercase tracking-widest text-gray-900 mb-6">Connect</h3>
                 <ul className="space-y-4 text-sm text-gray-500">
                   <li><Link to="/contact" className="hover:text-gray-900 transition-colors">Book a call</Link></li>
+                  <li>
+                    <a href="https://instagram.com/anthonygemayell" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gray-900 transition-colors">
+                      <Icons.Instagram className="w-4 h-4" /> Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/anthonybgemayel" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gray-900 transition-colors">
+                      <Icons.Twitter className="w-4 h-4" /> X (Twitter)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/anthony-gemayel-80b445272/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gray-900 transition-colors">
+                      <Icons.Linkedin className="w-4 h-4" /> LinkedIn
+                    </a>
+                  </li>
                 </ul>
               </div>
 
