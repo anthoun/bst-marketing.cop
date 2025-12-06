@@ -46,13 +46,13 @@ export const Home: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col gap-20 pb-20">
+    <div className="flex flex-col gap-10 md:gap-20 pb-10 md:pb-20">
       <Helmet>
         <title>Get more clients | BST Marketing Experts</title>
         <meta name="description" content="We help local businesses get more clients with paid ads and SEO. Guaranteed results in 30 days." />
       </Helmet>
       {/* Hero Section */}
-      <section className="relative pt-12 md:pt-24 pb-20 overflow-hidden">
+      <section className="relative pt-10 md:pt-24 pb-10 md:pb-20 overflow-hidden">
         {/* Subtle Background Glow */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 blur-3xl rounded-full pointer-events-none" />
 
@@ -105,8 +105,8 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Services Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="text-center mb-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20">
+        <div className="text-center mb-10 md:mb-16">
           <h3 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4">Services</h3>
           <h2 className="text-4xl md:text-5xl font-bold uppercase text-gray-900">
             How We Can Help You <span className="text-primary">Grow</span>
@@ -143,8 +143,8 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Process / How We Work Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20">
+        <div className="text-center mb-10 md:mb-20">
           <h3 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4">How We Work</h3>
           <h2 className="text-4xl md:text-5xl font-bold uppercase text-gray-900">It's Straightforward</h2>
         </div>
@@ -206,8 +206,8 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Comparison Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20">
+        <div className="text-center mb-10 md:mb-16">
           <h3 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4">The Difference</h3>
           <h2 className="text-4xl md:text-5xl font-bold uppercase text-gray-900">
             Why Choose BST Marketing Over <br className="hidden md:block" /> Everyone Else?
@@ -268,8 +268,8 @@ export const Home: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-16">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20">
+        <div className="text-center mb-10 md:mb-16">
           <h3 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4">Questions</h3>
           <h2 className="text-4xl md:text-5xl font-bold uppercase text-gray-900">
             Frequently Asked Questions
