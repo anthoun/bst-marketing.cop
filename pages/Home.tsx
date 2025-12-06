@@ -60,8 +60,8 @@ export const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             {/* Left Content */}
-            <div className="flex flex-col items-start text-left">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] text-gray-900">
+            <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] text-gray-900">
                 We'll Fill Your Calendar with New Customers in 30 Days - <span className="text-primary">Guaranteed</span>
               </h1>
 
