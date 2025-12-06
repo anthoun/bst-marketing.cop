@@ -4,6 +4,8 @@ import { db } from '../services/db';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
+import { SchemaMarkup } from '../components/SchemaMarkup';
+
 export const Home: React.FC = () => {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -51,6 +53,26 @@ export const Home: React.FC = () => {
         <title>Get more clients | BST Marketing Experts</title>
         <meta name="description" content="We help local businesses get more clients with paid ads and SEO. Guaranteed results in 30 days." />
       </Helmet>
+      <SchemaMarkup
+        type="LocalBusiness"
+        data={{
+          name: "BST Marketing",
+          image: "https://bstmarketing.me/og-image.png",
+          description: "We help local businesses get more clients with paid ads and SEO.",
+          url: "https://bstmarketing.me",
+          telephone: "",
+          address: {
+            "@type": "PostalAddress",
+            "addressCountry": "US"
+          },
+          priceRange: "$$",
+          sameAs: [
+            "https://instagram.com/anthonygemayell",
+            "https://x.com/anthonybgemayel",
+            "https://www.linkedin.com/in/anthony-gemayel-80b445272/"
+          ]
+        }}
+      />
       {/* Hero Section */}
       <section className="relative pt-10 md:pt-24 pb-10 md:pb-20 overflow-hidden">
         {/* Subtle Background Glow */}

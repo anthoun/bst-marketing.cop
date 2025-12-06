@@ -7,6 +7,8 @@ import { Icons } from '../components/Icons';
 import { Helmet } from 'react-helmet-async';
 import ReactMarkdown from 'react-markdown';
 
+import { SchemaMarkup } from '../components/SchemaMarkup';
+
 export const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const [post, setPost] = useState<BlogPostType | null>(null);
@@ -59,6 +61,28 @@ export const BlogPost: React.FC = () => {
         <meta property="og:type" content="article" />
         <link rel="canonical" href={window.location.href} />
       </Helmet>
+      <SchemaMarkup
+        type="Article"
+        data={{
+          headline: post.title,
+          description: post.seoDescription || post.excerpt,
+          image: post.coverImage ? [post.coverImage] : ["https://bstmarketing.me/og-image.png"],
+          datePublished: post.publishedAt,
+          dateModified: post.publishedAt,
+          author: {
+            "@type": "Person",
+            "name": "BST Marketing"
+          },
+          publisher: {
+            "@type": "Organization",
+            "name": "BST Marketing",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://bstmarketing.me/favicon.png"
+            }
+          }
+        }}
+      />
 
       {/* Cover Image */}
       {post.coverImage && (
