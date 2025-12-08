@@ -17,7 +17,7 @@ export default async function handler(req: any, res: any) {
       return res.status(500).send('Error generating sitemap');
     }
 
-    const baseUrl = 'https://www.bstmarketing.me';
+    const baseUrl = 'https://bstmarketing.me';
 
     // Static pages
     const staticPages = [
