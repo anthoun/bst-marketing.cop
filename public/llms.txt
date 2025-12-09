@@ -1,0 +1,12 @@
+# BST Marketing
+
+> We help local businesses get more clients with paid ads and SEO. Guaranteed results in 30 days.
+
+## Main Navigation
+- [Home](https://bstmarketing.me/)
+- [Blog](https://bstmarketing.me/blog): Learn our strategies for free.
+- [Newsletter](https://bstmarketing.me/newsletter): Weekly marketing tips.
+- [Contact](https://bstmarketing.me/contact): Book a strategy call.
+
+## Detailed Blog Posts (Source of Truth)
+- [Blog Index](https://bstmarketing.me/blog)
