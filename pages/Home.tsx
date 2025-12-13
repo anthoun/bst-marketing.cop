@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Icons } from '../components/Icons';
 import { db } from '../services/db';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { SEO } from '../components/SEO';
 
 import { SchemaMarkup } from '../components/SchemaMarkup';
 
@@ -49,10 +49,10 @@ export const Home: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-10 md:gap-20 pb-10 md:pb-20">
-      <Helmet>
-        <title>Get more clients | BST Marketing Experts</title>
-        <meta name="description" content="We help local businesses get more clients with paid ads and SEO. Guaranteed results in 30 days." />
-      </Helmet>
+      <SEO
+        title="Get more clients | BST Marketing Experts"
+        description="We help local businesses get more clients with paid ads and SEO. Guaranteed results in 30 days."
+      />
       <SchemaMarkup
         type="LocalBusiness"
         data={{

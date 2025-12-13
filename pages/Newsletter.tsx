@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Icons } from '../components/Icons';
 import { db } from '../services/db';
-import { Helmet } from 'react-helmet-async';
+import { SEO } from '../components/SEO';
 
 export const Newsletter: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -22,10 +22,10 @@ export const Newsletter: React.FC = () => {
 
   return (
     <div className="min-h-[80vh] flex flex-col justify-center py-20">
-      <Helmet>
-        <title>Newsletter | BST Marketing Experts</title>
-        <meta name="description" content="Join our newsletter for weekly marketing tips and strategies." />
-      </Helmet>
+      <SEO
+        title="Newsletter | BST Marketing Experts"
+        description="Join our newsletter for weekly marketing tips and strategies."
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
 
         {/* Header Section */}

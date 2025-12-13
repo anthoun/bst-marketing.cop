@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../services/db';
 import { BlogPost } from '../types';
-import { Helmet } from 'react-helmet-async';
+
 import { Link } from 'react-router-dom';
 import { Icons } from '../components/Icons';
+import { SEO } from '../components/SEO';
 
 export const Blog: React.FC = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
@@ -29,10 +30,10 @@ export const Blog: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-      <Helmet>
-        <title>Blog | BST Marketing Experts</title>
-        <meta name="description" content="Latest marketing strategies, tips, and insights for local businesses." />
-      </Helmet>
+      <SEO
+        title="Blog | BST Marketing Experts"
+        description="Latest marketing strategies, tips, and insights for local businesses."
+      />
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h4 className="text-red-500 font-bold uppercase tracking-widest mb-2 text-sm">The Blog</h4>
         <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">The No BS Blog That Will Help You Get More Customers</h1>

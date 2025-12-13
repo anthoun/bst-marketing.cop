@@ -4,7 +4,7 @@ import { db } from '../services/db';
 import { BlogPost as BlogPostType } from '../types';
 import { Icons } from '../components/Icons';
 
-import { Helmet } from 'react-helmet-async';
+import { SEO } from '../components/SEO';
 import ReactMarkdown from 'react-markdown';
 
 import { SchemaMarkup } from '../components/SchemaMarkup';
@@ -51,16 +51,13 @@ export const BlogPost: React.FC = () => {
 
   return (
     <article className="min-h-screen pb-20">
-      <Helmet>
-        <title>{post.seoTitle || post.title} | BST Marketing Experts</title>
-        <meta name="description" content={post.seoDescription || post.excerpt} />
-        {post.seoKeywords && <meta name="keywords" content={post.seoKeywords} />}
-        <meta property="og:title" content={post.seoTitle || post.title} />
-        <meta property="og:description" content={post.seoDescription || post.excerpt} />
-        {post.coverImage && <meta property="og:image" content={post.coverImage} />}
-        <meta property="og:type" content="article" />
-        <link rel="canonical" href={window.location.href} />
-      </Helmet>
+      <SEO
+        title={`${post.seoTitle || post.title} | BST Marketing Experts`}
+        description={post.seoDescription || post.excerpt}
+        keywords={post.seoKeywords}
+        image={post.coverImage}
+        type="article"
+      />
       <SchemaMarkup
         type="Article"
         data={{

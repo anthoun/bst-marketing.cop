@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Icons } from '../components/Icons';
 import { db } from '../services/db';
-import { Helmet } from 'react-helmet-async';
+import { SEO } from '../components/SEO';
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -36,10 +36,10 @@ export const Contact: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-      <Helmet>
-        <title>Contact | BST Marketing Experts</title>
-        <meta name="description" content="Book a free discovery call with BST Marketing Experts." />
-      </Helmet>
+      <SEO
+        title="Contact | BST Marketing Experts"
+        description="Book a free discovery call with BST Marketing Experts."
+      />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
         {/* Left Content */}
