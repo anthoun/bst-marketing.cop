@@ -68,5 +68,6 @@ export const Icons = {
   Send,
   Instagram,
   Linkedin,
-  Twitter
+  Twitter,
+  ArrowDown
 };
