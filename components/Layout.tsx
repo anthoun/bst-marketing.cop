@@ -111,7 +111,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   </span>
                 </div>
                 <p className="text-gray-500 text-sm mb-2">
-                  Paid Ads that drive real results.
+                  Dominate Your Local Market.
                 </p>
                 <p className="text-gray-600 text-sm">
                   Built for local brick and mortar businesses.

@@ -31,7 +31,8 @@ import {
   Send,
   Instagram,
   Linkedin,
-  Twitter
+  Twitter,
+  ArrowDown
 } from 'lucide-react';
 
 export const Icons = {

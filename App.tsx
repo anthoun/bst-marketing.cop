@@ -8,6 +8,7 @@ import { Newsletter } from './pages/Newsletter';
 import { Contact } from './pages/Contact';
 import { Admin } from './pages/Admin';
 import { NotFound } from './pages/NotFound';
+import { GMB } from './pages/GMB';
 
 import { ScrollToTop } from './components/ScrollToTop';
 
@@ -33,6 +34,7 @@ const AppContent: React.FC = () => {
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/newsletter" element={<Newsletter />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/gmb" element={<GMB />} />
         <Route path="/free-marketing-analysis" element={<Navigate to="/contact" replace />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
