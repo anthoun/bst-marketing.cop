@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -5,13 +6,11 @@ import { Icons } from '../components/Icons';
 
 export const NotFound: React.FC = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4 py-20 relative overflow-hidden">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4 text-center">
             <Helmet>
-                <title>404 - Page Not Found | BST Marketing Experts</title>
-                <meta name="description" content="The page you are looking for does not exist." />
+                <title>404 Not Found | BST Marketing Experts</title>
+                <meta name="robots" content="noindex" />
             </Helmet>
-
-            {/* Background Decor */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 blur-[100px] rounded-full pointer-events-none" />
 
             <div className="relative z-10 flex flex-col items-center">

@@ -36,3 +36,9 @@ export enum PageView {
   ADMIN_LOGIN = 'ADMIN_LOGIN',
   ADMIN_DASHBOARD = 'ADMIN_DASHBOARD',
 }
+
+declare global {
+  interface Window {
+    fbq: (action: string, eventName: string, params?: object) => void;
+  }
+}

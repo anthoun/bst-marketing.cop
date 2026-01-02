@@ -23,6 +23,11 @@ export const Contact: React.FC = () => {
         message: formData.message,
         type: 'contact'
       });
+
+      // Fire Meta Pixel Lead event
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Lead');
+      }
       setStatus('success');
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {

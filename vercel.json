@@ -2,11 +2,19 @@
     "framework": "vite",
     "installCommand": "npm install",
     "buildCommand": "npm run build",
-    "rewrites": [
+    "redirects": [
         {
-            "source": "/sitemap.xml",
-            "destination": "/api/sitemap"
+            "source": "/free-marketing-analysis",
+            "destination": "/contact",
+            "permanent": true
         },
+        {
+            "source": "/free-marketing-analysis/",
+            "destination": "/contact",
+            "permanent": true
+        }
+    ],
+    "rewrites": [
         {
             "source": "/(.*)",
             "destination": "/index.html"

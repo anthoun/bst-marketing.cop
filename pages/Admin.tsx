@@ -127,6 +127,9 @@ export const Admin: React.FC = () => {
    if (authChecking) {
       return (
          <div className="min-h-screen flex items-center justify-center bg-background">
+            <Helmet>
+               <meta name="robots" content="noindex" />
+            </Helmet>
             <Icons.Spinner className="w-8 h-8 text-primary animate-spin" />
          </div>
       );
@@ -135,11 +138,12 @@ export const Admin: React.FC = () => {
    if (!isAuthenticated) {
       return (
          <div className="min-h-screen flex items-center justify-center bg-background">
+            <Helmet>
+               <meta name="robots" content="noindex" />
+               <title>Admin Login | BST Marketing Experts</title>
+            </Helmet>
             <form onSubmit={handleLogin} className="w-full max-w-md p-8 bg-surface border border-gray-200 shadow-xl rounded-xl">
                <div className="flex justify-center mb-6">
-                  <Helmet>
-                     <title>Admin Login | BST Marketing Experts</title>
-                  </Helmet>
                   <div className="w-12 h-12 bg-primary rounded flex items-center justify-center transform -skew-x-12 shadow-lg shadow-primary/30">
                      <Icons.Zap className="w-6 h-6 text-white fill-current transform skew-x-12" />
                   </div>
@@ -192,6 +196,7 @@ export const Admin: React.FC = () => {
       <div className="min-h-screen bg-background text-gray-900 flex flex-col">
          <Helmet>
             <title>Admin Dashboard | BST Marketing Experts</title>
+            <meta name="robots" content="noindex" />
          </Helmet>
          {/* Admin Header */}
          <header className="bg-surface border-b border-gray-200 py-4 px-8 flex justify-between items-center shadow-sm">

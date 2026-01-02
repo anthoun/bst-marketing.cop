@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
 import { Blog } from './pages/Blog';
@@ -33,6 +33,7 @@ const AppContent: React.FC = () => {
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/newsletter" element={<Newsletter />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/free-marketing-analysis" element={<Navigate to="/contact" replace />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>

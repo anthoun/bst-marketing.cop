@@ -20,6 +20,16 @@ export const BlogPost: React.FC = () => {
         try {
           const found = await db.getPostBySlug(slug);
           setPost(found || null);
+
+          // Fire Meta Pixel ViewContent event
+          if (found && typeof window.fbq === 'function') {
+            window.fbq('track', 'ViewContent', {
+              content_name: found.title,
+              content_category: found.category,
+              content_ids: [found.id],
+              content_type: 'product'
+            });
+          }
         } catch (e) {
           console.error("Failed to load post", e);
         }

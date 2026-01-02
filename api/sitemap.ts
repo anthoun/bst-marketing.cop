@@ -37,7 +37,7 @@ export default async function handler(req: any, res: any) {
   </url>`).join('')}
   ${posts.map(post => `
   <url>
-    <loc>${baseUrl}/blog/${post.slug}</loc>
+    <loc>${baseUrl}/blog/${encodeURIComponent(post.slug)}</loc>
     <lastmod>${new Date(post.published_at).toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
